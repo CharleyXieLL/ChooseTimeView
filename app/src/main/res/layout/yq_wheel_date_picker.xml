@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+  <LinearLayout
+      android:id="@+id/ll"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:background="#dad5da"
+      android:gravity="center_vertical"
+      android:orientation="horizontal"
+      >
+
+    <lei.choosetimeview.wheelview.WheelView
+        android:id="@+id/year"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:background="#dad5da"
+        android:paddingLeft="20dp"
+        />
+
+    <lei.choosetimeview.wheelview.WheelView
+        android:id="@+id/month"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        />
+
+    <lei.choosetimeview.wheelview.WheelView
+        android:id="@+id/day"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:paddingRight="20dp"
+        />
+
+    <lei.choosetimeview.wheelview.WheelView
+        android:id="@+id/time"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:visibility="gone"
+        />
+
+    <lei.choosetimeview.wheelview.WheelView
+        android:id="@+id/min"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:visibility="gone"
+        />
+
+    <lei.choosetimeview.wheelview.WheelView
+        android:id="@+id/sec"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:visibility="gone"
+        />
+  </LinearLayout>
+
+  <RelativeLayout
+      android:id="@+id/rl_done"
+      android:layout_width="fill_parent"
+      android:layout_height="36dp"
+      android:layout_above="@id/ll"
+      android:background="@android:color/black"
+      >
+
+    <TextView
+        android:id="@+id/done"
+        android:layout_width="60dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:text="完成"
+        android:textColor="@android:color/white"
+        />
+    <TextView
+        android:id="@+id/cancel"
+        android:layout_width="60dp"
+        android:layout_height="35dp"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="@android:color/white"
+        />
+  </RelativeLayout>
+
+</RelativeLayout>
